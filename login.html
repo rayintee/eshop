@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>易购 - 欢饮登录</title>
+    <link rel="icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="易购ego.com-专业网上批发商城，在线批发家居百货、母婴、食品等数千万种优质商品。便捷、诚信的服务，为您提供愉悦的网上批发体验! ">
+    <meta name="Keywords" content="网上批发购物,网上食品,日用,家居百货,粮油,进口食品,办公用品,母音用品,易购网上批发,安徽省第一家批发平台">
+
+    <!-- Font Awesome CSS -->
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <!-- Core CSS -->
+    <link href="css/base.css" rel="stylesheet" />
+    <link href="css/login.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="w">
+        <div id="logo" class="logo">
+            <a href="login.html">
+                <img src="img/ego-logo.png" alt="易购">
+            </a>
+            <b></b>
+        </div>
+    </div>
+
+    <div id="content">
+        <div class="login-wrap">
+            <div class="w">
+                <div class="login-form">
+                    <div class="login-box">
+                        <div class="mt">
+                            <h1>易购会员</h1>
+                            <div class="extra-r">
+                                <div class="regist-link">
+                                    <a href="#" target="_blank"><b></b>立即注册</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="msg-wrap">
+                            <div class="msg-warn" style="display: none;"><b></b>公共场所不建议自动登录，以防账号丢失</div>
+                            <div class="msg-error hide" style="display: none;"><b></b></div>
+                        </div>
+                        <div class="mc">
+                            <div class="form">
+                                <form id="formlogin" method="post" onsubmit="return false;">
+                                    <div class="item item-fore1">
+                                        <label for="loginname" class="login-label name-label"></label>
+                                        <input id="loginname" type="text" class="itxt" name="loginname" tabindex="1" autocomplete="off" value="lun_f@sina.com" placeholder="邮箱/用户名/已验证手机">
+                                        <span class="clear-btn" style="display: none;"></span>
+                                    </div>
+                                    <div id="entry" class="item item-fore2">
+                                        <label class="login-label pwd-label" for="nloginpwd"></label>
+                                        <label id="sloginpwd" style="display: none;">
+                                        </label>
+                                        <input type="password" id="nloginpwd" name="nloginpwd" class="itxt itxt-error" tabindex="2" autocomplete="off" placeholder="密码">
+                                        <input type="hidden" name="loginpwd" id="loginpwd" value="" class="hide">
+                                        <span class="clear-btn"></span>
+                                    </div>
+                                    <div class="item item-fore3">
+                                        <div class="safe">
+                                        <span>
+                                            <input id="autoLogin" name="chkRememberMe" type="checkbox" class="jdcheckbox" tabindex="3" style="outline: rgb(109, 109, 109) none 0px;">
+                                            <label>自动登录</label>
+                                        </span>
+                                                                                <span class="forget-pw-safe">
+                                            <a href="http://safe.jd.com/findPwd/index.action" class="" target="_blank" clstag="pageclick|keycount|20150112ABD|8">忘记密码?</a>
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <div id="o-authcode" class="item item-vcode item-fore4  hide " style="display: block;">
+                                        <input id="authcode" type="text" class="itxt itxt02" name="authcode" tabindex="5">
+                                        <img id="JD_Verification1" class="verify-code" src2="https://authcode.jd.com/verify/image?a=1&amp;acid=574fca52-660b-4e9e-89e5-11b177411fc2&amp;uid=574fca52-660b-4e9e-89e5-11b177411fc2" onclick="this.src= document.location.protocol +'//authcode.jd.com/verify/image?a=1&amp;acid=574fca52-660b-4e9e-89e5-11b177411fc2&amp;uid=574fca52-660b-4e9e-89e5-11b177411fc2&amp;yys='+new Date().getTime();$('#authcode').val('');">
+                                        <a href="javascript:void(0)" onclick="$('#JD_Verification1').click();">看不清楚换一张</a>
+                                    </div>
+                                    <div class="item item-fore5">
+                                        <div class="login-btn">
+                                            <a href="javascript:;" class="btn-img btn-entry" id="loginsubmit" tabindex="6">登&nbsp;&nbsp;&nbsp;&nbsp;录</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="login-banner">
+                <div class="w">
+                    <div id="banner-bg" class="i-inner"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--页面底部-->
+    <div class="footer">
+        <div class="wrapper">
+            <div class="footer-info clearfix">
+                <div class="info-text">
+                    <p>
+                        <a href="#" target="_blank">关于易购</a>
+                        <span class="sep">|</span>
+                        <a href="#" target="_blank">加入我们</a>
+                        <span class="sep">|</span>
+                        <a href="#" target="_blank">联系客服</a>
+                        <span class="sep">|</span>
+                        <a href="#" target="_blank">法律声明</a>
+                    </p>
+                    <p>
+                        &copy; 2014-2015&nbsp;&nbsp;<a href="#" target="_blank" title="ego.com">www.ego.com</a>
+                        版权所有
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

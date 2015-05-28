@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>商品详情 - 易购网上批发商城</title>
+    <link rel="icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="易购ego.com-专业网上批发商城，在线批发家居百货、母婴、食品等数千万种优质商品。便捷、诚信的服务，为您提供愉悦的网上批发体验! ">
+    <meta name="Keywords" content="网上批发购物,网上食品,日用,家居百货,粮油,进口食品,办公用品,母音用品,易购网上批发,安徽省第一家批发平台">
+
+    <!-- Font Awesome CSS -->
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <!-- Core CSS -->
+    <link href="css/base.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="detail-view">
+    <!--头顶部-->
+    <div class="header top-fixed">
+        <div class="wrapper">
+            <ul class="fl">
+                <li>
+                    欢迎您,&nbsp;&nbsp;<a target="_blank" href="#" class="link-user">lun_f</a>&nbsp;&nbsp;
+                    <a href="#" class="link-logout">退出</a>
+                </li>
+            </ul>
+            <ul class="fr">
+                <li>
+                    <div class="dt">
+                        <a target="_blank" href="cart.html">我的购物车</a>
+                    </div>
+                </li>
+                <li class="spacer"></li>
+                <li>
+                    <div class="dt">
+                        <a target="_blank" href="#">我的订单</a>
+                    </div>
+                </li>
+                <li class="spacer"></li>
+                <li>
+                    <div class="dt">
+                        <a target="_blank" href="#">帮助中心</a>
+                    </div>
+                </li>
+                <li class="spacer"></li>
+                <li>
+                    <div class="dt">
+                        <a target="_blank" href="#">在线客服</a>
+                    </div>
+                </li>
+                <li class="spacer"></li>
+                <li>
+                    <div class="dt">
+                        <a target="_blank" href="#">意见建议</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--logo&&搜索区-->
+    <div class="block pt-70">
+        <div class="wrapper">
+            <div class="ego-logo">
+                <a href="#" class="logo">易购</a>
+            </div>
+            <div class="search">
+                <div class="ego-search">
+                    <ul id="search-shelper" class="hide"></ul>
+                    <div class="form">
+                        <input type="text" onkeydown="javascript:if(event.keyCode==13) search('key');" autocomplete="off" id="key" accesskey="s" class="text">
+                        <button onclick="search('key');return false;" class="button cw-icon"><i></i>搜索</button>
+                    </div>
+                </div>
+            </div>
+            <span class="clr"></span>
+        </div>
+    </div>
+
+    <!--商品详情-->
+    <div class="block mt-30">
+        <div class="d wrapper">
+            <div id="menu">
+                <div class="menu_inner">
+                    <ul class="site">
+                        <li><a href="index.html">首页</a></li>
+                        <li>&gt;</li>
+                        <li><a href="#" title="食品饮料">食品饮料</a></li>
+                        <li>&gt;</li>
+                        <li><a href="#" title="散称食品">散称食品</a></li>
+                        <li>&gt;</li><li><a href="#" title="休闲散食">休闲散食</a></li>
+                        <li>&gt;</li>
+                        <li>永明非常爆散称5kg</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="detail">
+                <div class="box" style="padding-left: 20px;">
+                    <ul>
+                        <li><img src="img/goods.jpg" alt="奇强柠檬超洁洗洁精450gx30瓶"></li>
+                    </ul>
+                    <div class="mation">
+                        <h2>奇强柠檬超洁洗洁精450gx30瓶</h2>
+                        <dl>
+                            <dt>商品单价</dt>
+                            <dd>
+                                <span>84</span>&nbsp;元
+                                <span style="font-weight:bold; color:Red; margin-left:20px; letter-spacing:2px;">指导零售价&nbsp;3.5&nbsp;元</span>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>商品库存</dt>
+                            <dd>货源充足</dd>
+                        </dl>
+                        <dl>
+                            <dt>购买类型</dt>
+                            <dd>
+                                <label><input type="radio" checked="checked" name="cstate" value="0" autocomplete="off">&nbsp;个</label>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>最小起订</dt>
+                            <dd>
+                                1&nbsp;个
+                            </dd>
+                        </dl>
+                        <dl class="num">
+                            <dt>购买数量</dt>
+                            <dd>
+                                <div class="num_div">
+                                    <p><input type="text" name="num" maxlength="4" value="1" autocomplete="off">总计:<span class="total">84元</span></p>
+                                    <p class="btn">
+                                        <button type="button" class="add_cart"><i class="fa fa-shopping-cart"></i> 加入购物车</button>
+                                        <a href="cart.html" class="go_pay">去结算</a>
+                                    </p>
+                                    <p class="msg"><span>已经加入购物车</span></p>
+                                </div>
+                            </dd>
+                        </dl>
+                        <input type="hidden" name="food_md5" value=" {&quot;minnum&quot;:&quot;c4ca4238a0b923820dcc509a6f75849b&quot;,&quot;price&quot;:&quot;68d30a9594728bc39aa24be94b319d21&quot;, &quot;box_price&quot;: &quot;cfcd208495d565ef66e7dff9f98764da&quot;, &quot;id&quot;: &quot;AAD3B422423D817ADFC2D3E46D43A440&quot; }" autocomplete="off">
+                        <input type="hidden" name="food" value="{ &quot;minnum&quot;: &quot;1&quot;, &quot;price&quot;: &quot;84&quot;, &quot;box_price&quot;: &quot;0&quot; }" autocomplete="off">
+                    </div>
+                </div>
+                <div class="info">
+                    <ul class="title">
+                        <li>产品介绍</li>
+                    </ul>
+                    <div class="inner">奇强柠檬超洁洗洁精450gx30瓶</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--页面底部-->
+    <div class="footer">
+        <div class="wrapper">
+            <div class="footer-links clearfix">
+                <dl class="col-links col-links-first">
+                    <dt>购物助手</dt>
+                    <dd><a rel="nofollow" href="#" target="_blank">购物指南</a></dd>
+                    <dd><a rel="nofollow" href="#" target="_blank">支付方式</a></dd>
+                    <dd><a rel="nofollow" href="#" target="_blank">配送方式</a></dd>
+                    <dd><a rel="nofollow" href="#" target="_blank">配送时间</a></dd>
+                </dl>
+                <dl class="col-links ">
+                    <dt>服务支持</dt>
+                    <dd><a rel="nofollow" href="#" target="_blank">售后政策</a></dd>
+                    <dd><a rel="nofollow" href="#" target="_blank">口味搭配</a></dd>
+                    <dd><a rel="nofollow" href="#" target="_blank">退货说明</a></dd>
+                </dl>
+                <dl class="col-links ">
+                    <dt>易购之家</dt>
+                    <dd><a rel="nofollow" href="#" target="_blank">采购说明</a></dd>
+                    <dd><a rel="nofollow" href="#" target="_blank">服务网点</a></dd>
+                    <dd><a rel="nofollow" href="#" target="_blank">亲临到店服务</a></dd>
+
+                </dl>
+                <dl class="col-links ">
+                    <dt>关于易购</dt>
+                    <dd><a rel="nofollow" href="#" target="_blank">易购简介</a></dd>
+                    <dd><a rel="nofollow" href="#" target="_blank">加入我们</a></dd>
+                    <dd><a rel="nofollow" href="#" target="_blank">联系我们</a></dd>
+                </dl>
+                <div class="col-contact">
+                    <p class="phone"><i class="fa fa-mobile-phone"></i>&nbsp;15395018388</p>
+                    <p>周一至周日 8:00-18:00<br>(无休息日)</p>
+                    <a rel="nofollow" class="btn btn-primary btn-small" href="#" target="_blank">
+                        <i class="fa fa-truck"></i>
+                        <span>免费送货</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-info clearfix">
+                <div class="info-text">
+                    <p>
+                        <a href="#" target="_blank">关于易购</a>
+                        <span class="sep">|</span>
+                        <a href="#" target="_blank">加入我们</a>
+                        <span class="sep">|</span>
+                        <a href="#" target="_blank">联系客服</a>
+                        <span class="sep">|</span>
+                        <a href="#" target="_blank">法律声明</a>
+                    </p>
+                    <p>
+                        &copy;2014-2015&nbsp;&nbsp;<a href="#" target="_blank" title="ego.com">www.ego.com</a>
+                        版权所有
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- jsRender -->
+    <script src="js/jsrender.js"></script>
+</body>
+</html>

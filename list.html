@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>商品列表 - 易购网上批发商城</title>
+    <link rel="icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="易购ego.com-专业网上批发商城，在线批发家居百货、母婴、食品等数千万种优质商品。便捷、诚信的服务，为您提供愉悦的网上批发体验! ">
+    <meta name="Keywords" content="网上批发购物,网上食品,日用,家居百货,粮油,进口食品,办公用品,母音用品,易购网上批发,安徽省第一家批发平台">
+
+    <!-- Font Awesome CSS -->
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <!-- Core CSS -->
+    <link href="css/base.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="list-view">
+    <!--头顶部-->
+    <div class="header top-fixed">
+        <div class="wrapper">
+            <ul class="fl">
+                <li>
+                    欢迎您,&nbsp;&nbsp;<a target="_blank" href="#" class="link-user">lun_f</a>&nbsp;&nbsp;
+                    <a href="#" class="link-logout">退出</a>
+                </li>
+            </ul>
+            <ul class="fr">
+                <li>
+                    <div class="dt">
+                        <a target="_blank" href="index.html">我的购物车</a>
+                    </div>
+                </li>
+                <li class="spacer"></li>
+                <li>
+                    <div class="dt">
+                        <a target="_blank" href="#">我的订单</a>
+                    </div>
+                </li>
+                <li class="spacer"></li>
+                <li>
+                    <div class="dt">
+                        <a target="_blank" href="#">帮助中心</a>
+                    </div>
+                </li>
+                <li class="spacer"></li>
+                <li>
+                    <div class="dt">
+                        <a target="_blank" href="#">在线客服</a>
+                    </div>
+                </li>
+                <li class="spacer"></li>
+                <li>
+                    <div class="dt">
+                        <a target="_blank" href="#">意见建议</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--logo&&搜索区-->
+    <div class="block pt-70">
+        <div class="wrapper">
+            <div class="ego-logo">
+                <a href="#" class="logo">易购</a>
+            </div>
+            <div class="search">
+                <div class="ego-search">
+                    <ul id="search-shelper" class="hide"></ul>
+                    <div class="form">
+                        <input type="text" onkeydown="javascript:if(event.keyCode==13) search('key');" autocomplete="off" id="key" accesskey="s" class="text">
+                        <button onclick="search('key');return false;" class="button cw-icon"><i></i>搜索</button>
+                    </div>
+                </div>
+            </div>
+            <span class="clr"></span>
+        </div>
+    </div>
+
+    <!--商品列表-->
+    <div class="block mt-30">
+        <div class="wrapper prod-list">
+            <div id="menu">
+                <div class="menu_inner">
+                    <ul class="site">
+                        <li><a href="index.html">首页</a></li>
+                        <li>&gt;</li>
+                        <li>食品饮料</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main">
+                <div class="lv">
+                    <div class="inner">
+                        <dl class="current">
+                            <dt>散称食品</dt>
+                            <dd>
+                                <ul>
+                                    <li><a href="#" title="休闲散食">休闲散食</a></li>
+                                    <li><a href="#" title="散称果冻">散称果冻</a></li>
+                                    <li><a href="#" title="散称馍片">散称馍片</a></li>
+                                    <li><a href="#" title="散称米果卷">散称米果卷</a></li>
+                                    <li><a href="#" title="散称糖">散称糖</a></li>
+                                    <li><a href="#" title="散称饼干">散称饼干</a></li>
+                                    <li><a href="#" title="散称锅巴">散称锅巴</a></li>
+                                    <li><a href="#" title="散称蛋糕">散称蛋糕</a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                    <dl>
+                        <dt>品牌</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#" title="盛之花">盛之花</a></li>
+                                <li><a href="#" title="光明">光明</a></li>
+                                <li><a href="#" title="蒙牛">蒙牛</a></li>
+                                <li><a href="#" title="澳德斯">澳德斯</a></li>
+                                <li><a href="#" title="名仁">名仁</a></li>
+                                <li><a href="#" title="辣典">辣典</a></li>
+                                <li><a href="#" title="巧妈妈">巧妈妈</a></li>
+                                <li><a href="#" title="好彩头">好彩头</a>
+                                </li><li><a href="#" title="味你美">味你美</a></li>
+                                <li><a href="#" title="天喔">天喔</a></li>
+                                <li><a href="#" title="红广场">红广场</a></li>
+                                <li><a href="#" title="乐维饮">乐维饮</a></li>
+                                <li><a href="#" title="艾精隆">艾精隆</a></li>
+                                <li><a href="#" title="三得利">三得利</a></li>
+                                <li><a href="#" title="银鹭">银鹭</a></li>
+                                <li><a href="#" title="江中">江中</a></li>
+                                <li><a href="#" title="鑫果旺">鑫果旺</a></li>
+                                <li><a href="#" title="好时">好时</a></li>
+                                <li><a href="#" title="郭金山">郭金山</a></li>
+                                <li><a href="#" title="杏福熊">杏福熊</a></li>
+                                <li><a href="/food/list.aspx?brand=510" title="青草湖">青草湖</a></li>
+                                <li><a href="/food/list.aspx?brand=508" title="酷莎">酷莎</a></li>
+                                <li><a href="/food/list.aspx?brand=507" title="诗蒂">诗蒂</a></li>
+                                <li><a href="/food/list.aspx?brand=505" title="友臣">友臣</a></li>
+                                <li><a href="/food/list.aspx?brand=502" title="泡吧">泡吧</a></li>
+                                <li><a href="/food/list.aspx?brand=493" title="威百利">威百利</a></li>
+                                <li><a href="/food/list.aspx?brand=492" title="滨崎食品">滨崎食品</a></li>
+                                <li><a href="/food/list.aspx?brand=491" title="耶米熊">耶米熊</a></li>
+                                <li><a href="/food/list.aspx?brand=490" title="RIO锐澳">RIO锐澳</a></li>
+                                <li><a href="/food/list.aspx?brand=487" title="牛肉类">牛肉类</a></li>
+                                <li><a href="/food/list.aspx?brand=483" title="干红葡萄酒">干红葡萄酒</a></li>
+                                <li><a href="/food/list.aspx?brand=476" title="香当当">香当当</a></li>
+                                <li><a href="/food/list.aspx?brand=471" title="四特">四特</a></li>
+                                <li><a href="/food/list.aspx?brand=463" title="乐百氏">乐百氏</a></li>
+                                <li><a href="/food/list.aspx?brand=461" title="百事可乐">百事可乐</a></li>
+                                <li><a href="/food/list.aspx?brand=460" title="统一">统一</a></li>
+                                <li><a href="/food/list.aspx?brand=456" title="王老吉">王老吉</a></li>
+                                <li><a href="/food/list.aspx?brand=454" title="青岛">青岛</a></li>
+                                <li><a href="/food/list.aspx?brand=453" title="可口可乐">可口可乐</a></li>
+                                <li><a href="/food/list.aspx?brand=404" title="黑卡">黑卡</a></li>
+                                <li><a href="/food/list.aspx?brand=400" title="立顿">立顿</a></li>
+                                <li><a href="/food/list.aspx?brand=396" title="三辉麦风">三辉麦风</a></li>
+                                <li><a href="/food/list.aspx?brand=394" title="地方特产">地方特产</a></li>
+                                <li><a href="/food/list.aspx?brand=387" title="康元饼干">康元饼干</a></li>
+                                <li><a href="/food/list.aspx?brand=386" title="方正山楂">方正山楂</a></li>
+                                <li><a href="/food/list.aspx?brand=385" title="欢乐家">欢乐家</a></li>
+                                <li><a href="/food/list.aspx?brand=384" title="同享话梅">同享话梅</a></li>
+                                <li><a href="/food/list.aspx?brand=279" title="麦丽素">麦丽素</a></li>
+                                <li><a href="/food/list.aspx?brand=278" title="回头客">回头客</a></li>
+                                <li><a href="/food/list.aspx?brand=277" title="坚果蜜饯">坚果蜜饯</a></li>
+                                <li><a href="/food/list.aspx?brand=276" title="冲调保健">冲调保健</a></li>
+                                <li><a href="/food/list.aspx?brand=275" title="膨化食品">膨化食品</a></li>
+                                <li><a href="/food/list.aspx?brand=273" title="盼盼">盼盼</a></li>
+                                <li><a href="/food/list.aspx?brand=272" title="广达话梅">广达话梅</a></li>
+                                <li><a href="/food/list.aspx?brand=271" title="悠哈">悠哈</a></li>
+                                <li><a href="/food/list.aspx?brand=270" title="苹果醋">苹果醋</a></li>
+                                <li><a href="/food/list.aspx?brand=269" title="真知棒">真知棒</a></li>
+                                <li><a href="/food/list.aspx?brand=268" title="红枣">红枣</a></li>
+                                <li><a href="/food/list.aspx?brand=267" title="卡夫">卡夫</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="list" id="goodsList">
+                    <div class="page">
+                        <ul>
+                            <li class="prev"><a href="javascript:return false;">上一页</a></li>
+                            <li class="next"><a href="#">下一页</a></li>
+                            <li class="total">1/6页</li>
+                            <li class="total">共102条记录</li>
+                        </ul>
+                    </div>
+                    <div class="product">
+                        <dl>
+                            <dt>
+                                <a href="#" title="川岛牛油曲奇106g"><img alt="川岛牛油曲奇106g" src="img/no_picture.jpg"></a>
+                            </dt>
+                            <dd>
+                                <p class="name"><a href="#" title="川岛牛油曲奇106g">川岛牛油曲奇106g</a></p>
+                                <p class="price">批发价:<span>5.5</span>元</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#" title="奥利奥巧轻脆薄片夹心 柔滑香草慕斯味 104g"><img alt="奥利奥巧轻脆薄片夹心 柔滑香草慕斯味 104g" src="img/no_picture.jpg" style="display: inline; opacity: 1;"></a>
+                            </dt>
+                            <dd>
+                                <p class="name"><a href="#" title="奥利奥巧轻脆薄片夹心 柔滑香草慕斯味 104g">奥利奥巧轻脆薄片夹心 柔滑香草慕斯味 104g</a></p>
+                                <p class="price">批发价:<span>5.5</span>元</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#" title="方正山楂片50g 1x20袋"><img alt="方正山楂片50g 1x20袋" src="img/no_picture.jpg" style="display: inline; opacity: 1;"></a>
+                            </dt>
+                            <dd>
+                                <p class="name"><a href="#" title="方正山楂片50g 1x20袋">方正山楂片50g 1x20袋</a></p>
+                                <p class="price">批发价:<span>14</span>元</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#" title="达利园 可比克原滋味45g"><img alt="达利园 可比克原滋味45g" src="img/no_picture.jpg" style="display: inline; opacity: 1;"></a>
+                            </dt>
+                            <dd>
+                                <p class="name">
+                                    <a href="#" title="达利园 可比克原滋味45g">达利园 可比克原滋味45g</a>
+                                </p>
+                                <p class="price">批发价:<span>2.6</span>元</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#" title="天喔茶庄  炭烧岩香奶茶饮料500mlx15瓶">
+                                    <img alt="天喔茶庄  炭烧岩香奶茶饮料500mlx15瓶" src="img/no_picture.jpg">
+                                </a>
+                            </dt>
+                            <dd>
+                                <p class="name">
+                                    <a href="#" title="天喔茶庄  炭烧岩香奶茶饮料500mlx15瓶">天喔茶庄  炭烧岩香奶茶饮料500mlx15瓶</a>
+                                </p>
+                                <p class="price">批发价:<span>48</span>元</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#" title="川岛牛油曲奇106g"><img alt="川岛牛油曲奇106g" src="img/no_picture.jpg"></a>
+                            </dt>
+                            <dd>
+                                <p class="name"><a href="#" title="川岛牛油曲奇106g">川岛牛油曲奇106g</a></p>
+                                <p class="price">批发价:<span>5.5</span>元</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#" title="奥利奥巧轻脆薄片夹心 柔滑香草慕斯味 104g"><img alt="奥利奥巧轻脆薄片夹心 柔滑香草慕斯味 104g" src="img/no_picture.jpg" style="display: inline; opacity: 1;"></a>
+                            </dt>
+                            <dd>
+                                <p class="name"><a href="#" title="奥利奥巧轻脆薄片夹心 柔滑香草慕斯味 104g">奥利奥巧轻脆薄片夹心 柔滑香草慕斯味 104g</a></p>
+                                <p class="price">批发价:<span>5.5</span>元</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#" title="方正山楂片50g 1x20袋"><img alt="方正山楂片50g 1x20袋" src="img/no_picture.jpg" style="display: inline; opacity: 1;"></a>
+                            </dt>
+                            <dd>
+                                <p class="name"><a href="#" title="方正山楂片50g 1x20袋">方正山楂片50g 1x20袋</a></p>
+                                <p class="price">批发价:<span>14</span>元</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#" title="达利园 可比克原滋味45g"><img alt="达利园 可比克原滋味45g" src="img/no_picture.jpg" style="display: inline; opacity: 1;"></a>
+                            </dt>
+                            <dd>
+                                <p class="name">
+                                    <a href="#" title="达利园 可比克原滋味45g">达利园 可比克原滋味45g</a>
+                                </p>
+                                <p class="price">批发价:<span>2.6</span>元</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#" title="天喔茶庄  炭烧岩香奶茶饮料500mlx15瓶">
+                                    <img alt="天喔茶庄  炭烧岩香奶茶饮料500mlx15瓶" src="img/no_picture.jpg">
+                                </a>
+                            </dt>
+                            <dd>
+                                <p class="name">
+                                    <a href="#" title="天喔茶庄  炭烧岩香奶茶饮料500mlx15瓶">天喔茶庄  炭烧岩香奶茶饮料500mlx15瓶</a>
+                                </p>
+                                <p class="price">批发价:<span>48</span>元</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#" title="川岛牛油曲奇106g"><img alt="川岛牛油曲奇106g" src="img/no_picture.jpg"></a>
+                            </dt>
+                            <dd>
+                                <p class="name"><a href="#" title="川岛牛油曲奇106g">川岛牛油曲奇106g</a></p>
+                                <p class="price">批发价:<span>5.5</span>元</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#" title="奥利奥巧轻脆薄片夹心 柔滑香草慕斯味 104g"><img alt="奥利奥巧轻脆薄片夹心 柔滑香草慕斯味 104g" src="img/no_picture.jpg" style="display: inline; opacity: 1;"></a>
+                            </dt>
+                            <dd>
+                                <p class="name"><a href="#" title="奥利奥巧轻脆薄片夹心 柔滑香草慕斯味 104g">奥利奥巧轻脆薄片夹心 柔滑香草慕斯味 104g</a></p>
+                                <p class="price">批发价:<span>5.5</span>元</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#" title="方正山楂片50g 1x20袋"><img alt="方正山楂片50g 1x20袋" src="img/no_picture.jpg" style="display: inline; opacity: 1;"></a>
+                            </dt>
+                            <dd>
+                                <p class="name"><a href="#" title="方正山楂片50g 1x20袋">方正山楂片50g 1x20袋</a></p>
+                                <p class="price">批发价:<span>14</span>元</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#" title="达利园 可比克原滋味45g"><img alt="达利园 可比克原滋味45g" src="img/no_picture.jpg" style="display: inline; opacity: 1;"></a>
+                            </dt>
+                            <dd>
+                                <p class="name">
+                                    <a href="#" title="达利园 可比克原滋味45g">达利园 可比克原滋味45g</a>
+                                </p>
+                                <p class="price">批发价:<span>2.6</span>元</p>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#" title="天喔茶庄  炭烧岩香奶茶饮料500mlx15瓶">
+                                    <img alt="天喔茶庄  炭烧岩香奶茶饮料500mlx15瓶" src="img/no_picture.jpg">
+                                </a>
+                            </dt>
+                            <dd>
+                                <p class="name">
+                                    <a href="#" title="天喔茶庄  炭烧岩香奶茶饮料500mlx15瓶">天喔茶庄  炭烧岩香奶茶饮料500mlx15瓶</a>
+                                </p>
+                                <p class="price">批发价:<span>48</span>元</p>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="page">
+                        <ul>
+                            <li class="prev"><a href="javascript:return false;">上一页</a></li>
+                            <li class="next"><a href="#">下一页</a></li>
+                            <li class="total">1/6页</li>
+                            <li class="total">共102条记录</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--页面底部-->
+    <div class="footer">
+        <div class="wrapper">
+            <div class="footer-links clearfix">
+                <dl class="col-links col-links-first">
+                    <dt>购物助手</dt>
+                    <dd><a rel="nofollow" href="#" target="_blank">购物指南</a></dd>
+                    <dd><a rel="nofollow" href="#" target="_blank">支付方式</a></dd>
+                    <dd><a rel="nofollow" href="#" target="_blank">配送方式</a></dd>
+                    <dd><a rel="nofollow" href="#" target="_blank">配送时间</a></dd>
+                </dl>
+                <dl class="col-links ">
+                    <dt>服务支持</dt>
+                    <dd><a rel="nofollow" href="#" target="_blank">售后政策</a></dd>
+                    <dd><a rel="nofollow" href="#" target="_blank">口味搭配</a></dd>
+                    <dd><a rel="nofollow" href="#" target="_blank">退货说明</a></dd>
+                </dl>
+                <dl class="col-links ">
+                    <dt>易购之家</dt>
+                    <dd><a rel="nofollow" href="#" target="_blank">采购说明</a></dd>
+                    <dd><a rel="nofollow" href="#" target="_blank">服务网点</a></dd>
+                    <dd><a rel="nofollow" href="#" target="_blank">亲临到店服务</a></dd>
+
+                </dl>
+                <dl class="col-links ">
+                    <dt>关于易购</dt>
+                    <dd><a rel="nofollow" href="#" target="_blank">易购简介</a></dd>
+                    <dd><a rel="nofollow" href="#" target="_blank">加入我们</a></dd>
+                    <dd><a rel="nofollow" href="#" target="_blank">联系我们</a></dd>
+                </dl>
+                <div class="col-contact">
+                    <p class="phone"><i class="fa fa-mobile-phone"></i>&nbsp;15395018388</p>
+                    <p>周一至周日 8:00-18:00<br>(无休息日)</p>
+                    <a rel="nofollow" class="btn btn-primary btn-small" href="#" target="_blank">
+                        <i class="fa fa-truck"></i>
+                        <span>免费送货</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-info clearfix">
+                <div class="info-text">
+                    <p>
+                        <a href="#" target="_blank">关于易购</a>
+                        <span class="sep">|</span>
+                        <a href="#" target="_blank">加入我们</a>
+                        <span class="sep">|</span>
+                        <a href="#" target="_blank">联系客服</a>
+                        <span class="sep">|</span>
+                        <a href="#" target="_blank">法律声明</a>
+                    </p>
+                    <p>
+                        &copy;2014-2015&nbsp;&nbsp;<a href="#" target="_blank" title="ego.com">www.ego.com</a>
+                        版权所有
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- jsRender -->
+    <script src="js/jsrender.js"></script>
+</body>
+</html>

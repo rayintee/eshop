@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>我的购物车 - 易购网上批发商城</title>
+    <link rel="icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="易购ego.com-专业网上批发商城，在线批发家居百货、母婴、食品等数千万种优质商品。便捷、诚信的服务，为您提供愉悦的网上批发体验! ">
+    <meta name="Keywords" content="网上批发购物,网上食品,日用,家居百货,粮油,进口食品,办公用品,母音用品,易购网上批发,安徽省第一家批发平台">
+
+    <!-- Font Awesome CSS -->
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <!-- Core CSS -->
+    <link href="css/base.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="cart-view">
+    <!--头顶部-->
+    <div class="header top-fixed">
+        <div class="wrapper">
+            <ul class="fl">
+                <li>
+                    欢迎您,&nbsp;&nbsp;<a target="_blank" href="#" class="link-user">lun_f</a>&nbsp;&nbsp;
+                    <a href="#" class="link-logout">退出</a>
+                </li>
+            </ul>
+            <ul class="fr">
+                <li>
+                    <div class="dt">
+                        <a target="_blank" href="index.html">易购首页</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="dt">
+                        <a target="_blank" href="#">我的订单</a>
+                    </div>
+                </li>
+                <li class="spacer"></li>
+                <li>
+                    <div class="dt">
+                        <a target="_blank" href="#">帮助中心</a>
+                    </div>
+                </li>
+                <li class="spacer"></li>
+                <li>
+                    <div class="dt">
+                        <a target="_blank" href="#">在线客服</a>
+                    </div>
+                </li>
+                <li class="spacer"></li>
+                <li>
+                    <div class="dt">
+                        <a target="_blank" href="#">意见建议</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--logo&&搜索区-->
+    <div class="block pt-70">
+        <div class="wrapper">
+            <div class="ego-logo">
+                <a href="#" class="logo">易购</a>
+            </div>
+            <div class="search">
+                <div class="ego-search">
+                    <ul id="search-shelper" class="hide"></ul>
+                    <div class="form">
+                        <input type="text" onkeydown="javascript:if(event.keyCode==13) search('key');" autocomplete="off" id="key" accesskey="s" class="text">
+                        <button onclick="search('key');return false;" class="button cw-icon"><i></i>搜索</button>
+                    </div>
+                </div>
+            </div>
+            <span class="clr"></span>
+        </div>
+    </div>
+
+    <!--购物车-->
+    <div class="block mt-50">
+        <div class="wrapper">
+            <div id="cartWrap"></div>
+        </div>
+    </div>
+
+    <!--页面底部-->
+    <div class="footer">
+        <div class="wrapper">
+            <div class="footer-links clearfix">
+                <dl class="col-links col-links-first">
+                    <dt>购物助手</dt>
+                    <dd><a rel="nofollow" href="#" target="_blank">购物指南</a></dd>
+                    <dd><a rel="nofollow" href="#" target="_blank">支付方式</a></dd>
+                    <dd><a rel="nofollow" href="#" target="_blank">配送方式</a></dd>
+                    <dd><a rel="nofollow" href="#" target="_blank">配送时间</a></dd>
+                </dl>
+                <dl class="col-links ">
+                    <dt>服务支持</dt>
+                    <dd><a rel="nofollow" href="#" target="_blank">售后政策</a></dd>
+                    <dd><a rel="nofollow" href="#" target="_blank">口味搭配</a></dd>
+                    <dd><a rel="nofollow" href="#" target="_blank">退货说明</a></dd>
+                </dl>
+                <dl class="col-links ">
+                    <dt>易购之家</dt>
+                    <dd><a rel="nofollow" href="#" target="_blank">采购说明</a></dd>
+                    <dd><a rel="nofollow" href="#" target="_blank">服务网点</a></dd>
+                    <dd><a rel="nofollow" href="#" target="_blank">亲临到店服务</a></dd>
+
+                </dl>
+                <dl class="col-links ">
+                    <dt>关于易购</dt>
+                    <dd><a rel="nofollow" href="#" target="_blank">易购简介</a></dd>
+                    <dd><a rel="nofollow" href="#" target="_blank">加入我们</a></dd>
+                    <dd><a rel="nofollow" href="#" target="_blank">联系我们</a></dd>
+                </dl>
+                <div class="col-contact">
+                    <p class="phone"><i class="fa fa-mobile-phone"></i>&nbsp;15395018388</p>
+                    <p>周一至周日 8:00-18:00<br>(无休息日)</p>
+                    <a rel="nofollow" class="btn btn-primary btn-small" href="#" target="_blank">
+                        <i class="fa fa-truck"></i>
+                        <span>免费送货</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-info clearfix">
+                <div class="info-text">
+                    <p>
+                        <a href="#" target="_blank">关于易购</a>
+                        <span class="sep">|</span>
+                        <a href="#" target="_blank">加入我们</a>
+                        <span class="sep">|</span>
+                        <a href="#" target="_blank">联系客服</a>
+                        <span class="sep">|</span>
+                        <a href="#" target="_blank">法律声明</a>
+                    </p>
+                    <p>
+                        &copy;2014-2015&nbsp;&nbsp;<a href="#" target="_blank" title="ego.com">www.ego.com</a>
+                        版权所有
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- jsRender -->
+    <script src="js/jsrender.js"></script>
+    <!-- Base JavaScript -->
+    <script src="js/cart.js"></script>
+
+    <!-- cart list template-->
+    <script id="cartListTempl" type="text/x-jsrender">
+        <div class="msg">
+            <h2><span>
+                    <i class="fa fa-exclamation-triangle"></i>配送时间说明:
+                    <b class="msg-text">每天17:00之前成功提交订单视为"当日"订单(隔天配送); 每天17:00之后成功提交订单视为"次日"订单(隔两天配送)</b>
+                </span></h2>
+        </div>
+        <div class="cart">
+            <div class="cart-filter-bar">
+                <div class="cart-name">
+                    <i class="fa fa-shopping-cart"></i>
+                    我的购物车
+                </div>
+                <div class="cart-sum">
+                    已选商品（免运费）<strong class="price">¥<em class="total amount-money">00.00</em></strong>
+                    <a href="#" class="submit-btn">提交订单</a>
+                </div>
+            </div>
+            <div class="cart-main">
+                <div class="cart-table-th">
+                    <div class="wp">
+                        <div class="th th-chk">
+                            <div class="select-all selected">
+                                <div class="cart-checkbox">
+                                    <input class="checkbox" type="checkbox" name="select-all" />
+                                    &nbsp;&nbsp;全选
+                                </div>
+                            </div>
+                        </div>
+                        <div class="th th-item"><div class="td-inner">商品信息</div></div>
+                        <div class="th th-price"><div class="td-inner">单价（元）</div></div>
+                        <div class="th th-amount"><div class="td-inner">数量</div></div>
+                        <div class="th th-info"><div class="td-inner">购买类型</div></div>
+                        <div class="th th-sum"><div class="td-inner">金额（元）</div></div>
+                        <div class="th th-op"><div class="td-inner">操作</div></div>
+                    </div>
+                </div>
+                <div class="order-list">
+                    {{for orderList}}
+                        <div class="order clearfix order-body">
+                            <div class="order-content">
+                                <div class="item-body clearfix">
+                                    <ul class="item-content clearfix">
+                                        <li class="td td-chk">
+                                            <div class="td-inner">
+                                                <div class="cart-checkbox">
+                                                    <input class="checkbox" type="checkbox" name="orderList" />
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="td td-item">
+                                            <div class="td-inner">
+                                                <div class="item-pic img-loaded">
+                                                <a href="{{:goods_url}}" target="_blank" title=""><img src="{{:goods_pic_path}}"></a>
+                                                </div>
+                                                <div class="item-info">
+                                                <div class="item-basic-info">
+                                                    <a href="{{:goods_url}}" target="_blank" title="" class="item-title">{{:goods_name}}</a>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="td td-price">
+                                            <div class="td-inner">
+                                                <div class="item-price price-promo-promo">
+                                                <div class="price-content">
+                                                    <div class="price-line">
+                                                    <em class="price-original">{{:goods_old_price}}</em>
+                                                    </div>
+                                                    <div class="price-line">
+                                                    <em class="price-now">{{:goods_new_price}}</em>
+                                                    </div>
+                                                    <div class="promo-main promo-promo">
+                                                    <div class="promo-content promo-tbcard">批发价格</div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="td td-amount">
+                                            <div class="td-inner">
+                                                <div class="amount-wrapper">
+                                                    <div class="item-amount">
+                                                        {{if goods_num>1}}
+                                                        <a href="javascript:;" class="minus">-</a>
+                                                        {{else}}
+                                                        <a href="javascript:;" class="no-minus">-</a>
+                                                        {{/if}}
+                                                        <input type="text" value="{{:goods_num}}" class="text text-amount allNum">
+                                                        <a href="javascript:;" class="plus">+</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="td td-info">
+                                            <div class="td-inner">
+                                                <em class="type">{{:type}}</em>
+                                            </div>
+                                        </li>
+                                        <li class="td td-sum">
+                                            <div class="td-inner">
+                                                <div class="price-line">
+                                                <em class="price-original old_number">{{:goods_old_amount}}</em>
+                                                </div>
+                                                <em class="number">{{:goods_new_amount}}</em>
+                                            </div>
+                                        </li>
+                                        <li class="td td-op">
+                                            <div class="td-inner">
+                                                <a href="#" class="order_del">删除</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    {{/for}}
+                </div>
+            </div>
+            <div id="cart-floatbar">
+                <div class="floatbar">
+                    <div class="cart-toolbar">
+                        <div class="toolbar-wrap">
+                            <div class="options-box">
+                                <div class="operation">
+                                    <a href="index.html" target="_blank" class="continue-shopping">继续购物&nbsp;&gt;&gt;</a>
+                                </div>
+                                <div class="clr"></div>
+                                <div class="toolbar-right">
+                                    <div class="normal">
+                                        <div class="comm-right">
+                                            <div class="btn-area">
+                                                <a href="#" class="submit-btn">提交订单<b></b></a>
+                                            </div>
+                                            <div class="price-sum">
+                                                <div>
+                                                    <span class="txt">总价（免运费）：</span>
+                                                    <span class="price sumPrice"><em>¥</em><em class="amount-money">00.00</em></span>
+                                                    <br>
+                                                    <span class="txt">已节省：</span>
+                                                    <span class="price totalRePrice">- ¥<i class="amount-less">00.00</i></span>
+                                                </div>
+                                            </div>
+                                            <div class="clr"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <script id="emptyTempl" type="text/x-jsrender">
+        <div class="cart-empty">
+            <div class="message">
+                <ul>
+                    <li class="txt">您的购物车还是空的，赶紧购物吧~</li>
+                    <li><a href="index.html" class="ftx-05">去购物&nbsp;&gt;&gt;</a></li>
+                </ul>
+            </div>
+        </div>
+    </script>
+</body>
+</html>

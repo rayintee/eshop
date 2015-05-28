@@ -1,0 +1,27 @@
+{
+  "orderList":[
+    {
+      "goods_id":"000001",
+      "goods_name":"乐呵呵香菇牛肉75g",
+      "goods_url":"#",
+      "goods_pic_path":"img/goods_1.jpg",
+      "goods_old_price":"4.00",
+      "goods_new_price":"3.20",
+      "goods_num":"1",
+      "goods_old_amount":"40.00",
+      "goods_new_amount":"32.00",
+      "type":"个"
+    },{
+      "goods_id":"000002",
+      "goods_name":"乐呵呵香菇牛肉75g",
+      "goods_url":"#",
+      "goods_pic_path":"img/goods_1.jpg",
+      "goods_old_price":"4.00",
+      "goods_new_price":"3.20",
+      "goods_num":"10",
+      "goods_old_amount":"40.00",
+      "goods_new_amount":"32.00",
+      "type":"个"
+    }
+  ]
+}
