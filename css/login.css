@@ -1,3 +1,5 @@
+@charset "GBK";
+
 .w {
     width: 990px;
     margin: 0 auto;
@@ -473,3 +475,191 @@ h1 {
 .footer .footer-info{
     border-top: 0;
 }
+
+
+/*====================== register ==================*/
+body.register {
+    background: #fff;
+}
+
+.register .w {
+    width: 990px;
+    padding: 0;
+    margin: 0 auto;
+    zoom: 1;
+}
+.register #logo {
+    padding: 10px 0;
+    position: relative;
+}
+
+.register #logo a img{
+    width:170px;
+    height:60px;
+}
+
+.register #logo b {
+    position: absolute;
+    top: 48px;
+    left: 190px;
+    width: 130px;
+    height: 60px;
+   /* border-left: 1px solid #F2F2F2;*/
+}
+
+.register #logo b::before {
+    content: '»¶Òû×¢²á';
+    font-size: 26px;
+    display: block;
+    margin-top: 15px;
+    font-family: "Î¢ÈíÑÅºÚ";
+}
+
+/*register form*/
+.register div.add {
+    border: 1px solid #ddd;
+    width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    zoom: 1;
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Tahoma, "ËÎÌå", "Î¢ÈíÑÅºÚ", Microsoft YaHei, Geneva, sans-serif;
+    font-size: 1em;
+}
+
+.register div.add h2 {
+    font-size: 1.8em;
+    background: #eee;
+    margin-bottom: 20px;
+}
+.register div.add h2 span {
+    background: #D9241B;
+    display: block;
+    width: 130px;
+    text-align: center;
+    color: #fff;
+    height: 35px;
+    line-height: 35px;
+}
+
+.register div.add h3 {
+    background: #eee;
+    font-size: 1.6em;
+    padding: 5px 0 5px 20px;
+    margin-bottom: 15px;
+}
+
+.register div.add dl {
+    zoom: 1;
+    overflow: hidden;
+    width: 575px;
+    margin: 0 auto 15px;
+}
+.register div.add dl dt {
+    width: 120px;
+    padding-top: 2px;
+    float: left;
+    text-align: center;
+}
+.register div.add dl dd {
+    width: 450px;
+    float: left;
+}
+
+.register input, .register select, .register textarea, .register button {
+    font-size: inherit;
+    line-height: inherit;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.register div.add dl dd input {
+    margin-right: 15px;
+    width: 190px;
+    height: 25px;
+}
+
+.register div.add dl dd label {
+    margin-right: 15px;
+}
+
+.register label input {
+    min-height: inherit;
+    _height: auto;
+    line-height: inherit;
+    padding: 0;
+    background: none;
+    border: none;
+    width: auto;
+    margin: 0;
+}
+.register div.add dl dd label input {
+    margin-right: 5px;
+    width: auto;
+}
+
+.register select {
+    height: 25px;
+    padding: 3px;
+    vertical-align: middle;
+    border: 1px solid #D9241B;
+    background: url(../img/input_bg.gif) left top no-repeat;
+}
+
+.register div.add dl dd select {
+    width: 192px;
+    height: 26px;
+    padding: 4px 0 2px;
+    border: 1px solid #D9241B;
+    vertical-align: middle;
+    margin-right: 17px;
+}
+
+.register div.add p.btn {
+    width: 100%;
+    margin-left: 230px;
+    margin-top: 50px;
+    clear: both;
+}
+
+.register button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.register button,.register a.a_btn {
+    min-height: 23px;
+    _height: 26px;
+    vertical-align: middle;
+    display: inline-block;
+    width: auto;
+    background: #DA251D;
+    color: #fff;
+    border-radius: 5px;
+    padding: 3px 0;
+}
+
+.register div.add p.btn button {
+    padding: 4px 40px;
+    font-size: 1.6em;
+}
+
+.register dd span {
+    color: #989898;
+}
+
+
