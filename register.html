@@ -35,21 +35,21 @@
                 <h2><span>会员注册</span></h2>
                 <h3>账户信息</h3>
                 <dl>
-                    <dt>登录账户:</dt>
+                    <dt><span>*</span>登录账户:</dt>
                     <dd>
                         <input type="text" class="check name" name="userId" value="" maxlength="15" autocomplete="off">
                         <span>由汉字_字母数字组成4-15字符或QQ</span>
                     </dd>
                 </dl>
                 <dl>
-                    <dt>用户密码:</dt>
+                    <dt><span>*</span>用户密码:</dt>
                     <dd>
                         <input type="password" class="check pwd" name="pwd" value="" maxlength="15" autocomplete="off">
                         <span>由数字_字母组成6-15字符</span>
                     </dd>
                 </dl>
                 <dl>
-                    <dt>再次输入密码:</dt>
+                    <dt><span>*</span>再次输入密码:</dt>
                     <dd>
                         <input type="password" class="check pwd" name="newPwd" value="" maxlength="15" autocomplete="off">
                         <span>再次输入密码</span>
@@ -65,23 +65,23 @@
                     </dd>
                 </dl>
                 <dl>
-                    <dt>用户邮箱:</dt>
+                    <dt>固定号码:</dt>
                     <dd>
-                        <input type="text" class="check email" name="email" value="" maxlength="20" autocomplete="off">
-                        <span>格式xxx@xxx.com</span>
+                        <input type="text" class="check email" name="phone" maxlength="20" autocomplete="off">
+                        <span>固定号码,如：区号-号码</span>
                     </dd>
                 </dl>
                 <dl>
-                    <dt>用户手机:</dt>
+                    <dt><span>*</span>用户手机:</dt>
                     <dd>
-                        <input type="text" class="check tel" name="tel" value="" autocomplete="off">
+                        <input type="text" class="check tel" name="mobile" maxlength="11" autocomplete="off">
                         <span>11位有效手机号码</span>
                     </dd>
                 </dl>
                 <dl>
                     <dt>用户地址:</dt>
                     <dd>
-                        <input type="text" class="check" name="address" style="width: 420px;" value="" maxlength="150" autocomplete="off">
+                        <input type="text" class="check address" name="address" maxlength="150" autocomplete="off">
                         <br>
                         <span>输入客户配送地址</span>
                     </dd>
@@ -89,17 +89,16 @@
                 <dl>
                     <dt>用户区域:</dt>
                     <dd>
-                        <select name="area" class="cg" autocomplete="off">
-                            <option value="643BA9DB6B77AB02064E8198AD6A0B10">瑶海区</option>
-                            <option value="F719557C33C7363CB05DC631BA3DBAFA">新站区</option>
-                            <option value="F108CBC6D3B189BBC435D2A49EA39C5F">庐阳区</option>
-                            <option value="575C29F468BE0644308E4B578440F566">蜀山区</option>
-                            <option value="798EFB9BEBCE288B78D3CE00E3B664B6">包河区</option>
-                            <option value="71CA337788D02045E29D10B9E3171A2D">经开区</option>
-                            <option value="F42CA12542EA733C0A87A50273D7F615">高新区</option>
-                            <option value="2AFDEF011F7B29529C7A8C2740969B30">政务区</option>
-                            <option value="1AF8DA88850E53FB7D58D0CA85C322A9">滨湖新区</option>
-                            <option value="2E68000DFF59ECD860DD617E2217D369">肥东区</option>
+                        <select name="areaCode" class="cg" autocomplete="off">
+                            <option value="1">瑶海区</option>
+                            <option value="2">新站区</option>
+                            <option value="3">庐阳区</option>
+                            <option value="4">蜀山区</option>
+                            <option value="5">包河区</option>
+                            <option value="6">经开区</option>
+                            <option value="7">高新区</option>
+                            <option value="8">政务区</option>
+                            <option value="9">滨湖新区</option>
                         </select>
                     </dd>
                 </dl>
@@ -107,13 +106,13 @@
                 <dl>
                     <dt>营业执照号:</dt>
                     <dd>
-                        <input type="text" class="check int null" name="license" value="" maxlength="30" autocomplete="off">
+                        <input type="text" class="check int null" name="license" maxlength="30" autocomplete="off">
                         <span>输入客户营业执照号,没有为空</span>
                     </dd>
                 </dl>
 
                 <p class="btn">
-                    <button type="button" value="添加" autocomplete="off" class="">注册</button>
+                    <button type="button" autocomplete="off" class="">注册</button>
                 </p>
             </div>
         </div>

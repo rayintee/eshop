@@ -662,4 +662,12 @@ h1, h2, h3, h4, h5, h6 {
     color: #989898;
 }
 
+.register dt span{
+    color: red;
+    margin-right: 3px;
+    font-size: 14px;
+}
 
+.register input.address{
+    width: 420px;
+}
